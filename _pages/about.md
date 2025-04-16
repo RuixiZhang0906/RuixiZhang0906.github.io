@@ -7,7 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-# Ruixi Zhang (张睿曦)
 
 I am a senior undergraduate student at [College of Software](https://csw.jlu.edu.cn/) at [Jilin University](https://www.jlu.edu.cn/).
 
