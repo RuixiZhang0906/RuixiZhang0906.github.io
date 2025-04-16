@@ -1,21 +1,24 @@
 ---
 permalink: /
-title: "Ruixi Zhang"
+title: "Ruixi Zhang (张睿曦)"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-======
-I'm a senior undergraduate student from [College of Software](https://csw.jlu.edu.cn/),  [Jilin University](https://www.jlu.edu.cn/). 
-My research interest includes computer vision, computer graphics, machine learning, and LLM.
+# Ruixi Zhang (张睿曦)
 
-**Education**
+I am a senior undergraduate student at [College of Software](https://csw.jlu.edu.cn/) at [Jilin University](https://www.jlu.edu.cn/).
 
-- **master**，  
-  ICT,Chinese Academy of Science, 2025 - 2028
+My research interests include computer vision, computer graphics, machine learning, and large language models (LLM). I am currently exploring topics related to High Performance Computing (HPC).
 
-- **Bachelor**，Software Engineering
-  Jilin University，2021.9 - 2025.7  
+## Education
 
+- **Master's Degree**, ICT, Chinese Academy of Sciences, 2025 - 2028
+
+- **Bachelor's Degree**, Software Engineering, Jilin University, September 2021 - July 2025
+
+## Contaction
+
+- **Email**:zhangrx5521@mails.jlu.edu.cn
