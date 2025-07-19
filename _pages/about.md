@@ -9,11 +9,13 @@ redirect_from:
 
 ---
 
-# 张睿曦 · Ruixi Zhang
+## 🎓 Academic Background
+I'm currently pursuing my Master's degree at the Institute of Computing Technology ([ICT](https://www.ict.ac.cn/), Chinese Academy of Sciences ([CAS](https://www.cas.cn/)) 🔬. Previously, I earned my Bachelor’s degree in Software Engineering 💻 from the[College of Software](https://csw.jlu.edu.cn/) at [Jilin University (JLU)](https://www.jlu.edu.cn/) .
 
-I am a senior undergraduate student at [College of Software](https://csw.jlu.edu.cn/) at [Jilin University](https://www.jlu.edu.cn/).
+---
 
-My research interests include computer vision, computer graphics, machine learning, and large language models (LLM). Recently, I’ve been diving into high performance computing (HPC) and studying how machine learning can help systems run faster, smarter, and with fewer all-nighters.
+## 🚀 Current Focus & Aspirations
+I'm now passionately diving into AI/ML knowledge 🤖 and exploring its applications in computer systems. Simultaneously, I'm actively learning about Large Language Models (LLMs) 🌐 and aspire to research ML Systems (ML Sys) and ML for Systems (ML for Sys) in the future!
 
 ---
 
@@ -48,8 +50,6 @@ My research interests include computer vision, computer graphics, machine learni
 
 - **Master's Degree**, Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS), *2025 – 2028 (expected)*  
 - **Bachelor's Degree**, Software Engineering, Jilin University, *2021 – 2025*  
-  - GPA: Top 26% (86/330)
-
 ---
 
 ## 🏆 Honors & Awards
@@ -67,7 +67,7 @@ My research interests include computer vision, computer graphics, machine learni
 - **Web**: HTML, CSS  
 - **Tools**: Git, Linux, UNIX, MySQL, DB2, Oracle  
 - **Frameworks**: PyTorch, OpenMP  
-- **Certifications**: CET-6, Intermediate Software Engineer, CSP Score 315
+- **Certifications**: CET-6, Intermediate Software Engineer
 
 ---
 
