@@ -7,8 +7,6 @@ redirect_from:
   - /about.html
 ---
 
----
-
 ## 🎓 Academic Background
 I'm currently pursuing my Master's degree at the Institute of Computing Technology ([ICT](https://www.ict.ac.cn/), Chinese Academy of Sciences ([CAS](https://www.cas.cn/)) 🔬. Previously, I earned my Bachelor’s degree in Software Engineering 💻 from the[College of Software](https://csw.jlu.edu.cn/) at [Jilin University (JLU)](https://www.jlu.edu.cn/) .
 
@@ -55,24 +53,6 @@ I'm now passionately diving into AI/ML knowledge 🤖 and exploring its applicat
 - School-level Scholarship, **First and Third Class**  
 - Outstanding Student Leader, Jilin University  
 - School Mathematical Competition, **Third Prize**
-
----
-
-## 🧠 Skills
-
-- **Languages**: Python > C++ = C > Java >> Rust = Go  
-- **Web**: HTML, CSS  
-- **Tools**: Git, Linux, UNIX, MySQL, DB2, Oracle  
-- **Frameworks**: PyTorch, OpenMP  
-- **Certifications**: CET-6, Intermediate Software Engineer
-
----
-
-## 📣 Activities
-
-- Assistant Counselor  
-- Debate Team Organizer, Jilin University ZhanYu Debate Society  
-- Class Academic Commissioner
 
 ---
 
