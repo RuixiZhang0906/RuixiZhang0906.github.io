@@ -25,8 +25,8 @@ author:
   avatar           : "photo20250416.png"
   name             : "Ruixi Zhang"
   pronouns         : "he/him"# example: "she/her"  
-  bio              : "I am a bachler student major in software enfineering in Jilin University."
-  location         : "Shaanxi or Jilin"
+  bio              : "I am a first year graduate student frome ICT,CAS."
+  # location         : "Shaanxi or Jilin"
   employer         : # "Red Brick University"
   uri              : # URL
   email            : "zhangrx0906@163.com"
