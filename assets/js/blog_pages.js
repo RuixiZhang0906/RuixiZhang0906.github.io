@@ -32,6 +32,9 @@ function handleCategoryPage() {
     const posts = getBlogPosts();
     const categoryPosts = posts.filter(post => post.category === category);
     
+    // Sort posts by date in descending order (newest first)
+    categoryPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    
     // Update post count
     const postCountEl = document.getElementById('post-count');
     if (postCountEl) {
@@ -64,6 +67,9 @@ function handleTagPage() {
     const tagPosts = posts.filter(post => 
         post.tags && post.tags.some(t => t.toLowerCase() === tag.toLowerCase())
     );
+    
+    // Sort posts by date in descending order (newest first)
+    tagPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
     
     // Update post count
     const postCountEl = document.getElementById('post-count');

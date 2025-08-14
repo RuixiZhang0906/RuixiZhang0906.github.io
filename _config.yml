@@ -47,3 +47,6 @@ collections:
   blogs:
     output: true
     permalink: /blogs/:path/
+  notes:
+    output: true
+    permalink: /blogs/categories/notes/:path/

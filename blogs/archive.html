@@ -18,6 +18,15 @@ navbar_title: Blog
 
         <!-- Archive Timeline -->
         {% assign sorted_posts = site.blogs | sort: "date" | reverse %}
+        
+        <!-- Check if a specific year is requested -->
+        {% assign selected_year = page.year %}
+        
+        <!-- Filter posts by year if a year is selected -->
+        {% if selected_year %}
+            {% assign sorted_posts = sorted_posts | where_exp: "post", "post.date | date: '%Y' == selected_year" %}
+        {% endif %}
+        
         {% assign current_year = "" %}
         {% assign current_month = "" %}
         
@@ -25,7 +34,8 @@ navbar_title: Blog
             {% assign post_year = post.date | date: "%Y" %}
             {% assign post_month = post.date | date: "%B" %}
             
-            {% if post_year != current_year %}
+            <!-- Only show year header if no specific year is selected -->
+            {% if post_year != current_year and selected_year == nil %}
                 {% if current_year != "" %}
                     </div> <!-- Close previous month -->
                 </div> <!-- Close previous year -->
@@ -36,24 +46,27 @@ navbar_title: Blog
                     {% assign current_month = "" %}
             {% endif %}
             
-            {% if post_month != current_month %}
-                {% if current_month != "" %}
-                    </div> <!-- Close previous month -->
+            <!-- Show posts for the selected year or all years -->
+            {% if selected_year == nil or selected_year == post_year %}
+                {% if post_month != current_month %}
+                    {% if current_month != "" %}
+                        </div> <!-- Close previous month -->
+                    {% endif %}
+                    <div class="timeline-month mb-3">
+                        <h4 class="text-secondary mb-2">{{ post_month }}</h4>
+                        {% assign current_month = post_month %}
                 {% endif %}
-                <div class="timeline-month mb-3">
-                    <h4 class="text-secondary mb-2">{{ post_month }}</h4>
-                    {% assign current_month = post_month %}
+                
+                <div class="mb-3">
+                    {% include widgets/blog_item.html post=post %}
+                </div>
             {% endif %}
-            
-            <div class="mb-3">
-                {% include widgets/blog_item.html post=post %}
-            </div>
         {% endfor %}
         
         {% if current_month != "" %}
             </div> <!-- Close last month -->
         {% endif %}
-        {% if current_year != "" %}
+        {% if current_year != "" and selected_year == nil %}
             </div> <!-- Close last year -->
         {% endif %}
     </div>

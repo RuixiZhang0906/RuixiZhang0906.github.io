@@ -46,5 +46,10 @@
     </script>
     <script src="{{ '/assets/js/common.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/bubble_visual_hash.js' | relative_url }}"></script>
+    
+    <!-- Blog Archive Script (only load on archive page) -->
+    {% if page.url contains '/blogs/archive' %}
+    <script src="{{ '/assets/js/blog_archive.js' | relative_url }}"></script>
+    {% endif %}
 </body>
 </html>

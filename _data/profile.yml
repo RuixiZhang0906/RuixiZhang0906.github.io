@@ -19,6 +19,13 @@ twitter: rayz_2003  # Do not include the '@' symbol
 # linkedin: your-linked-in-id
 # orcid: 0000-0000-0000-0000
 
+# Gitalk configuration
+gitalk_client_id: your-github-app-client-id
+gitalk_client_secret: your-github-app-client-secret
+gitalk_repo: ruixizhang0906.github.io
+gitalk_owner: RuixiZhang0906
+gitalk_admin: RuixiZhang0906
+
 short_bio_text_justify: false
 short_bio: >-
   <p>
