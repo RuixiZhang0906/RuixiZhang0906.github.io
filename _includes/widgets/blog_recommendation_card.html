@@ -1,0 +1,76 @@
+<div class="row">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-5">
+                <h2 class="card-title">{{ include.title }}</h2>
+                <div class="row">
+                    {% for blog in include.blogs %}
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100 border-0 shadow-sm blog-recommendation-item">
+                            {% if blog.cover %}
+                            {% assign cover_path = blog.cover | relative_url %}
+                            {% assign cover_exists = false %}
+                            {% for file in site.static_files %}
+                                {% if file.path == cover_path %}
+                                    {% assign cover_exists = true %}
+                                    {% break %}
+                                {% endif %}
+                            {% endfor %}
+                            {% if cover_exists %}
+                            <img src="{{ blog.cover | relative_url }}" 
+                                 class="card-img-top" 
+                                 alt="{{ blog.title }}"
+                                 style="height: 150px; object-fit: cover;">
+                            {% endif %}
+                            {% endif %}
+                            
+                            <div class="card-body d-flex flex-column">
+                                <div class="mb-2">
+                                    {% for tag in blog.tags limit: 2 %}
+                                    <span class="badge badge-primary badge-sm mr-1">{{ tag }}</span>
+                                    {% endfor %}
+                                </div>
+                                
+                                <h5 class="card-title">
+                                    <a href="{{ blog.url }}" class="text-dark text-decoration-none">
+                                        {{ blog.title }}
+                                    </a>
+                                </h5>
+                                
+                                <p class="card-text text-muted small">
+                                    {{ blog.excerpt | strip_html | truncate: 100 }}
+                                </p>
+                                
+                                <div class="mt-auto">
+                                    <div class="d-flex justify-content-between align-items-center text-muted small">
+                                        <span>
+                                            <i class="fas fa-calendar-alt"></i>
+                                            {{ blog.date | date: "%b %d, %Y" }}
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-eye"></i>
+                                            <span class="blog-views" data-url="{{ blog.url }}">-</span>
+                                        </span>
+                                    </div>
+                                    
+                                    <div class="mt-2">
+                                        <span class="badge badge-info">
+                                            <i class="fas fa-folder"></i> {{ blog.category | capitalize }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <div class="text-center mt-4">
+                    <a href="/blogs/" class="btn btn-outline-primary">
+                        <i class="fas fa-arrow-right"></i> View All Blog Posts
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

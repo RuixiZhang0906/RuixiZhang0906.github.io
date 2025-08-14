@@ -1,0 +1,48 @@
+---
+layout: default
+title: Blog Tag
+navbar_title: Blog
+---
+
+<script>
+// Get tag from URL parameter
+const urlParams = new URLSearchParams(window.location.search);
+const tag = urlParams.get('tag');
+if (tag) {
+    document.title = `Tag: ${tag} - Blog`;
+    document.querySelector('.tag-name').textContent = tag;
+}
+</script>
+
+<div class="row">
+    <!-- Main Content -->
+    <div class="col-lg-8">
+        <div class="bg-white shadow-sm rounded-lg p-4 mb-4">
+            <h2 class="mb-3">
+                <i class="fas fa-tag"></i> 
+                Tag: <span class="badge badge-primary badge-lg tag-name">Loading...</span>
+            </h2>
+            <p class="text-muted">
+                <span id="post-count">Loading...</span> posts found with this tag
+            </p>
+        </div>
+
+        <!-- Posts with Tag -->
+        <div id="tag-posts" class="mb-4">
+            <div class="text-center">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <p class="mt-2">Loading posts...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="col-lg-4">
+        {% include widgets/blog_sidebar.html %}
+    </div>
+</div>
+
+<script src="{{ '/assets/js/blog_pages.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/blog_views.js' | relative_url }}"></script>
