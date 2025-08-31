@@ -19,6 +19,31 @@ baseurl: "" # the subpath of your site, e.g. /blog
 markdown: kramdown
 plugins:
   - jekyll-email-protect
+  - jekyll-minifier
+  - jekyll-sitemap
+
+# Minifier settings
+jekyll-minifier:
+  exclude: ['*.xml', '*.json']
+  compress_css: true
+  compress_javascript: true
+  compress_json: false
+  simple_doctype: false
+  preserve_line_breaks: false
+  remove_script_attributes: false
+  remove_style_attributes: false
+  remove_link_attributes: false
+  remove_form_attributes: false
+  remove_input_attributes: false
+  remove_javascript_protocol: false
+  remove_http_protocol: false
+  remove_https_protocol: false
+  preserve_patterns:
+    - !!js/regexp /\<\!--[\s\S]*?--\>/
+    - !!js/regexp /\{\{[\s\S]*?\}\}/
+    - !!js/regexp /\{%[\s\S]*?%\}/
+  uglifier_args:
+    harmony: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -44,9 +69,3 @@ collections:
   showcase:
     output: true
     permalink: /showcase/:path/
-  blogs:
-    output: true
-    permalink: /blogs/:path/
-  notes:
-    output: true
-    permalink: /blogs/categories/notes/:path/

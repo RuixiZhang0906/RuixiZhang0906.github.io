@@ -5,9 +5,5 @@ pages:
   url: /
 - name: Publications
   url: /publications
-- name: Blogs
-  url: /blogs
-- name: Notes
-  url: /blogs/notes
 # - name: Showcase
 #   url: /showcase

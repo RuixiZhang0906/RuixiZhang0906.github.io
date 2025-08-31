@@ -31,16 +31,3 @@ Homepage News section temporarily disabled during testing
         title='<i class="fas fa-star"></i> Selected Publications'
     %}
 {% endif %}
-
-{% if site.data.display.homepage.show_featured_blogs %}
-    {% assign featured_blogs = site.blogs | where: "featured", true | sort: "date" | reverse | limit: 3 %}
-    {% if featured_blogs.size > 0 %}
-        {% 
-            include widgets/blog_recommendation_card.html 
-            blogs=featured_blogs
-            title='<i class="fas fa-blog"></i> Featured Blog Posts'
-        %}
-    {% endif %}
-{% endif %}
-
-<script src="{{ '/assets/js/blog_views.js' | relative_url }}"></script>

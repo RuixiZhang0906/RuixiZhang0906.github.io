@@ -1,0 +1,7 @@
+# robots.txt for https://ruixizhang0906.github.io/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ruixizhang0906.github.io/sitemap.xml
